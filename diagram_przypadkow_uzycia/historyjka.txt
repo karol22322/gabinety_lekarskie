@@ -1,0 +1,8 @@
+Jako pacjent chcę mieć możliwość rejestracji, żeby móc korzystać z dalszych usług.
+Jako lekarz chcę mieć prosty wgląd do dokumentacji medycznej, tak aby zaoszczędzić czas wizyty. 
+Jako lekarz chcę mieć prosty wgląd do dokumentacji medycznej, aby móc wystawić receptę.
+Jako recepcjonista chcę mieć możliwość ustawiania harmonogramu, tak aby system wyświetlał wolne terminy.
+Jako pacjent chcę widzieć wolne terminy, żeby wiedzieć kiedy mogę umówić się na wizytę.
+Jako pacjent chcę, żeby był możliwy wgląd w moją dokumentację medyczną,żeby otrzymać receptę bez konieczności umawiania się na wizytę.
+Jako pacjent chcę miec możliwość wyboru płatności za wizytę, tak aby rozplanować swoje środki.
+Jako recepcjonista muszę mieć dostęp do systemu opłat, żeby pobrać opłatę od pacjenta.
