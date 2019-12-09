@@ -18,5 +18,52 @@
     <ClCompile Include="Osoba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Pracownik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pacjent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wizyta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Recepta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Zwolnienie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lekarz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Termin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Osoba.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pracownik.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pacjent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wizyta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Recepta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Zwolnienie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lekarz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Termin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

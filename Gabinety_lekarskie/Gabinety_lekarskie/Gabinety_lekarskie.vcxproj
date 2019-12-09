@@ -110,7 +110,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lekarz.cpp" />
     <ClCompile Include="Osoba.cpp" />
+    <ClCompile Include="Pacjent.cpp" />
+    <ClCompile Include="Pracownik.cpp" />
+    <ClCompile Include="Recepta.cpp" />
+    <ClCompile Include="Termin.cpp" />
+    <ClCompile Include="Wizyta.cpp" />
+    <ClCompile Include="Zwolnienie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Lekarz.h" />
+    <ClInclude Include="Osoba.h" />
+    <ClInclude Include="Pacjent.h" />
+    <ClInclude Include="Pracownik.h" />
+    <ClInclude Include="Recepta.h" />
+    <ClInclude Include="Termin.h" />
+    <ClInclude Include="Wizyta.h" />
+    <ClInclude Include="Zwolnienie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
