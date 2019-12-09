@@ -111,6 +111,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Osoba.cpp" />
+    <ClCompile Include="Paragon.cpp" />
+    <ClCompile Include="Platnosc.cpp" />
+    <ClCompile Include="Ubezpieczenie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Paragon.h" />
+    <ClInclude Include="Platnosc.h" />
+    <ClInclude Include="Ubezpieczenie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
