@@ -1,5 +1,5 @@
 #pragma once
-#include "platnosc.h"
+#include "Platnosc.h"
 class Paragon: public Platnosc
 {
 	void Wydrukuj();

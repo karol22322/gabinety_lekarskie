@@ -1,6 +1,8 @@
 #pragma once
 #include <ctime>
-#include "Ubezpieczenie.cpp"
+#include <iostream>
+#include "Ubezpieczenie.h"
+
 class Platnosc
 {
 protected:
@@ -9,6 +11,7 @@ protected:
 	bool status;
 
 public:
+	float ile();
 	void Wniosek(Ubezpieczenie &ub);
 	void Gotowka(float oplata);
 	void Karta();
@@ -18,6 +21,7 @@ public:
 
 public:
 	Platnosc();
+	Platnosc(float kw);
 	~Platnosc();
 };
 
