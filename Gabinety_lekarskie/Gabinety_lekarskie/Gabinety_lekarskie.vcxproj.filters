@@ -18,51 +18,27 @@
     <ClCompile Include="Osoba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pracownik.cpp">
+    <ClCompile Include="Platnosc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Pacjent.cpp">
+    <ClCompile Include="Ubezpieczenie.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Wizyta.cpp">
+    <ClCompile Include="Paragon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Recepta.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Zwolnienie.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Lekarz.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Termin.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Osoba.h">
+    <ClInclude Include="Platnosc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pracownik.h">
+    <ClInclude Include="Ubezpieczenie.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Pacjent.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Wizyta.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Recepta.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Zwolnienie.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Lekarz.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Termin.h">
+    <ClInclude Include="Paragon.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

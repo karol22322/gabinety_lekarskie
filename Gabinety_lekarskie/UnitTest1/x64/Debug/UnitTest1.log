@@ -1,0 +1,8 @@
+﻿  unittest1.cpp
+  Ubezpieczenie.cpp
+  Platnosc.cpp
+  Paragon.cpp
+  Osoba.cpp
+  Generating Code...
+Osoba.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  UnitTest1.vcxproj -> \\KRYWAN\RedirectedUserFolders\kkusik8\Pulpit\Gabinety_lekarskie\x64\Debug\UnitTest1.lib

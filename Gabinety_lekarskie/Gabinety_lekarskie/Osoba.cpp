@@ -1,12 +1,12 @@
-#include "Osoba.h"
+#include <string>
 
 
-Osoba::Osoba()
-{
-	
-}
+using namespace std;
+class Osoba {
+
+protected:
+	string imie;
 
 
-Osoba::~Osoba()
-{
-}
+
+};
