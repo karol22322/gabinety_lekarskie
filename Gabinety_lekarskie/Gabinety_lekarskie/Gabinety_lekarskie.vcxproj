@@ -38,7 +38,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -110,24 +110,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Lekarz.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Osoba.cpp" />
-    <ClCompile Include="Pacjent.cpp" />
-    <ClCompile Include="Pracownik.cpp" />
-    <ClCompile Include="Recepta.cpp" />
-    <ClCompile Include="Termin.cpp" />
-    <ClCompile Include="Wizyta.cpp" />
-    <ClCompile Include="Zwolnienie.cpp" />
+    <ClCompile Include="Paragon.cpp" />
+    <ClCompile Include="Platnosc.cpp" />
+    <ClCompile Include="Ubezpieczenie.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Lekarz.h" />
-    <ClInclude Include="Osoba.h" />
-    <ClInclude Include="Pacjent.h" />
-    <ClInclude Include="Pracownik.h" />
-    <ClInclude Include="Recepta.h" />
-    <ClInclude Include="Termin.h" />
-    <ClInclude Include="Wizyta.h" />
-    <ClInclude Include="Zwolnienie.h" />
+    <ClInclude Include="Paragon.h" />
+    <ClInclude Include="Platnosc.h" />
+    <ClInclude Include="Ubezpieczenie.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
