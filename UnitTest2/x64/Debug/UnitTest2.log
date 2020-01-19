@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  unittest1.cpp
+c:\users\kiksd\onedrive\documents\github\gabinety_lekarskie\gabinety_lekarskie\lekarz.h(19): error C2061: syntax error: identifier 'Zwolnienie'
+c:\users\kiksd\onedrive\documents\github\gabinety_lekarskie\gabinety_lekarskie\lekarz.h(20): error C3646: 'Pobierz_dane_pacjenta': unknown override specifier
+c:\users\kiksd\onedrive\documents\github\gabinety_lekarskie\gabinety_lekarskie\lekarz.h(20): error C2059: syntax error: '('
+c:\users\kiksd\onedrive\documents\github\gabinety_lekarskie\gabinety_lekarskie\lekarz.h(20): error C2238: unexpected token(s) preceding ';'

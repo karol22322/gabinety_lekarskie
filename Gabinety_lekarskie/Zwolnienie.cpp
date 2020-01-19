@@ -16,7 +16,13 @@ Zwolnienie::~Zwolnienie()
 void Zwolnienie::Stworz_zwolnienie(string imie, string nazw, int pesel, Lekarz lekarz, string opis) {
 	this->imie = imie;
 	this->nazwisko = nazwisko;
-	this->PESEL = pesel;
+	if (PESEL < 10000000000 || PESEL > 99999999999) {
+		PESEL = 0;
+		std::cout << "Podano nieprawidlowy PESEL" << std::endl;
+	}
+	else {
+		this->PESEL = pesel;
+	}
 	this->lekarz = lekarz;
 	this->data_wystawienia = 0;
 	this->termin_zwolnienia = 0;
@@ -25,7 +31,18 @@ void Zwolnienie::Stworz_zwolnienie(string imie, string nazw, int pesel, Lekarz l
 
 }
 
+string Zwolnienie::GetName() {
+	
+	return this->imie;
+}
+string Zwolnienie::GetSurname() {
 
+	return this->nazwisko;
+}
+int Zwolnienie::GetPESEL() {
+
+	return this->PESEL;
+}
 void Zwolnienie::Wydrukuj_zwolnienie() {
 	cout << "Wydruk recepty" << endl;
 	cout << "Imie: " << imie << endl;

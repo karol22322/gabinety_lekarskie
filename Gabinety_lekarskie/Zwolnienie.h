@@ -10,7 +10,9 @@ public:
 	~Zwolnienie();
 	void Wydrukuj_zwolnienie();
 	void Zwolnienie::Stworz_zwolnienie(string imie, string nazw, int pesel, Lekarz lekarz, string opis);
-
+	string Zwolnienie::GetName();
+	string Zwolnienie::GetSurname();
+	int Zwolnienie::GetPESEL();
 private:
 	string imie;
 	string nazwisko;
