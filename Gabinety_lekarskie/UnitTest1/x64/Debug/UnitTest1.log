@@ -1,6 +1,0 @@
-﻿  UnitTest1.cpp
-     Trwa tworzenie biblioteki C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\x64\Debug\UnitTest1.lib i obiektu C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\x64\Debug\UnitTest1.exp
-UnitTest1.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: float __cdecl Platnosc::ile(void)" (?ile@Platnosc@@QEAAMXZ) przywołany w funkcji "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ)
-UnitTest1.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: __cdecl Platnosc::Platnosc(void)" (??0Platnosc@@QEAA@XZ) przywołany w funkcji "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ)
-UnitTest1.obj : error LNK2019: nierozpoznany zewnętrzny symbol "public: __cdecl Platnosc::~Platnosc(void)" (??1Platnosc@@QEAA@XZ) przywołany w funkcji "public: void __cdecl UnitTest1::UnitTest1::TestMethod1(void)" (?TestMethod1@UnitTest1@1@QEAAXXZ)
-C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\x64\Debug\UnitTest1.dll : fatal error LNK1120: liczba nierozpoznanych elementów zewnętrznych: 3

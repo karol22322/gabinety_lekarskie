@@ -4,5 +4,8 @@ class Termin
 public:
 	Termin();
 	~Termin();
+
+private:
+	
 };
 

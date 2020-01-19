@@ -17,6 +17,8 @@ Lekarz::~Lekarz()
 {
 }
 
+
+
 void Lekarz::Wyswietl_dane() {
 	cout << "Dane lekarza: " << endl << endl;
 	cout << "Imie: " << imie << endl;
@@ -31,4 +33,21 @@ void Lekarz::Wyswietl_dane() {
 void Lekarz::Wystaw_recepte() {
 	Recepta* r = new Recepta;
 
+}void Lekarz::Wystaw_zwolnienie() {
+	
+
+}
+
+void Lekarz::Wprowadz_specjalizacje() {
+	cout << "Specjalizacja: ";
+	cin >> specjalizacja;
+}
+
+string Lekarz::specjal() {
+	return specjalizacja;
+}
+
+ostream& operator<<(ostream& os, const Lekarz& oso) {
+	os << oso.haslo << ' ' << oso.imie << ' ' << oso.nazwisko << ' ' << oso.adres << ' ' << oso.nrTel << ' ' << oso.PESEL << ' ' << oso.specjalizacja;
+	return os;
 }

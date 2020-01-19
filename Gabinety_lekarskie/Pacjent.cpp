@@ -18,17 +18,19 @@ Pacjent::~Pacjent()
 
 
 
-
+float Pacjent::Wyswietl_saldo() {
+	return saldo;
+}
 
 
 void Pacjent::Rezerwuj_termin() {
 
 
 }
-void Pacjent::Wydrukuj_recepte(Recepta recepta) {
-	recepta.Wydrukuj_recepte();
+//void Pacjent::Wydrukuj_recepte(Recepta recepta) {
 
-}
+
+//}
 void Pacjent::Wydrukuj_zwolnienie() {
 
 

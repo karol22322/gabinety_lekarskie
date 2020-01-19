@@ -1,10 +1,9 @@
 #pragma once
 #include "Pacjent.h"
-#include <string>
+
 using namespace std;
 
-class Zwolnienie: public Pacjent
-{
+class Zwolnienie{
 public:
 	Zwolnienie();
 	~Zwolnienie();
