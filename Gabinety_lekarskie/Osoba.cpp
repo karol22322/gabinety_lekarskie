@@ -47,6 +47,39 @@ void Osoba::Dodaj_osobe() {
 	cin >> PESEL;
 }
 
+void Osoba::Edytuj_dane() {
+	string napis;
+	cout << "Podaj has³o: ";
+	cin >> napis;
+	if (napis == haslo) {
+		int i;
+		cout << "Imiê(1), Nazwisko(2), Adres(3), Numer telefonu(4): ";
+		cin >> i;
+		cout << "WprowadŸ nowe dane: ";
+		switch (i) {
+		case 1: {
+			cin >> imie;
+			break;
+		}
+		case 2: {
+			cin >> nazwisko;
+			break;
+		}
+		case 3: {
+			cin >> adres;
+			break;
+		}
+		case 4: {
+			cin >> nrTel;
+			break;
+		}
+		}
+	}
+	else {
+		cout << "B³êdne has³o!" << endl;
+	}
+}
+
 void Osoba::Tworz_konto() {
 
 	switch (Tworz_haslo()) {

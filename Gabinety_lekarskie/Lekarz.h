@@ -18,6 +18,7 @@ public:
 	void Wystaw_recepte();
 	void Wystaw_zwolnienie(Zwolnienie);
 	Pacjent Pobierz_dane_pacjenta(int);
+	friend void wyborp();
 
 private:
 	int id;

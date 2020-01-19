@@ -4,6 +4,7 @@
 #include "Platnosc.h"
 #include "Lekarz.h"
 #include <list>
+#include <vector>
 #include <fstream>
 
 using namespace std;
@@ -15,68 +16,206 @@ list<Lekarz> lekarze;
 fstream baza;
 
 void wyswietl_lekarzy() {
-	for (list<Lekarz>::iterator iter = lekarze.begin(); iter != lekarze.end(); ) {
+	for (list<Lekarz>::iterator iter = lekarze.begin(); iter != lekarze.end(); ++iter ) {
 		iter->Lekarz::Wyswietl_dane();
-		iter++;
 	}
 }
 
 void wyswietl_pacjentow() {
-	for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ) {
+	for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ++iter) {
 		iter->Wyswietl_dane();
-		iter++;
+		
 	}
 }
 
 
-void wybor() {
-	int x;
-	cout << "\nCo chcesz zrobiæ?" << endl;
-	cout << "Za³o¿yæ konto (1)\n Zmieniæ has³o(2)\nWyœwietliæ swoje dane(3)\n";
+void wyborp2(char x, string PESEL, string h) {
+	cout << "Saldo(1)\nZmiana has³a(2)\nMoje dane(3)\nEdycja danych(4)\nWizyty(5)\nTerminarz(6)\nLekarze(7)\nMoje recepty i zwolnienia(8)\nWyjœcie(x)\n";
 	cin >> x;
 	switch (x) {
-	case(1): {
-		
+	case('1'): {
+
+
+	}
+	case('2'): {
+		for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ++iter) {
+
+			if (PESEL == iter->PESEL) {
+				iter->Zmien_haslo();
+				baza.open("Baza.txt", ios::in);
+
+				string linia;
+				vector<string> linijki;
+				while (getline(baza, linia))                     //zczytywanie z pliku
+				{
+					linijki.push_back(linia);
+				}
+				baza.close();
+				baza.open("Baza.txt", ios::out);
+
+
+				unsigned i = 0;
+				for (i = 0; i < linijki.size(); i++)
+				{
+					if (linijki[i].find(iter->PESEL) != string::npos)         //jakiœ sposób znalezienia liniki, któr¹ chcesz zmieniæ
+						break;
+				}
+				int j = i;
+
+				for (unsigned i = 0; i < linijki.size(); i++) //wypisanie i wpisanie do pliku
+				{
+					if (i + 1 == linijki.size()) {
+						if (i == j) {
+							baza << "p " << *iter;
+						}
+						else {
+							baza << linijki[i];
+						}
+					}
+					else {
+						if (i == j) {
+							baza << "p " << *iter << endl;
+						}
+						else {
+							baza << linijki[i] << endl;
+						}
+					}
+
+				}
+				cout << endl;
+			}
+		}
+		break;
+
+	}
+
+	case('3'): {
+
+		int i = 0;
+		for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); iter++) {
+
+			if (PESEL == iter->PESEL) {
+				iter->Wyswietl_dane();
+			}	
+		}
+		break;
+	}
+
+	case('4'): {
+		int i = 0;
+		for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ++iter) {
+
+			if (PESEL == iter->PESEL) {
+				i++;
+				iter->Edytuj_dane();
+				baza.open("Baza.txt", ios::in);
+
+				string linia;
+				vector<string> linijki;
+				while (getline(baza, linia))                     //zczytywanie z pliku
+				{
+					linijki.push_back(linia);
+				}
+				baza.close();
+				baza.open("Baza.txt", ios::out);
+
+
+				unsigned i = 0;
+				for (i = 0; i < linijki.size(); i++)
+				{
+					if (linijki[i].find(iter->PESEL) != string::npos)         //jakiœ sposób znalezienia liniki, któr¹ chcesz zmieniæ
+						break;
+				}
+				int j = i;
+
+				for (unsigned i = 0; i < linijki.size(); i++) //wypisanie i wpisanie do pliku
+				{
+					if (i + 1 == linijki.size()) {
+						if (i == j) {
+							baza << "p " << *iter;
+						}
+						else {
+							baza << linijki[i];
+						}
+					}
+					else {
+						if (i == j) {
+							baza << "p " << *iter << endl;
+						}
+						else {
+							baza << linijki[i] << endl;
+						}
+					}
+
+				}
+				cout << endl;
+			}
+		}
+		if (i == 0)
+			cout << "Nie ma konta o danym numerze PESEL" << endl;
+		break;
+
+	}
+
+	case('7'): {
+		for (list<Lekarz>::iterator iter = lekarze.begin(); iter != lekarze.end(); iter++) {
+			cout << iter->imie << ' ' << iter->nazwisko << ' ' << iter->specjalizacja << endl;
+		}
+		break;
+	}
+			 
+	}
+	if (x != 'x')
+		wyborp2(x, PESEL, h);
+}
+
+void wyborp() {
+	char x;
+	string PESEL;
+	string h;
+	cout << "\nCo chcesz zrobiæ?" << endl;
+	cout << "Za³o¿enie konta(1)\nLogowanie(2)\n";
+	cin >> x;
+	switch (x) {
+	case('1'): {
 		Pacjent p;
 		p.Tworz_konto();
 		pacjenci.push_back(p);
 		baza.open("Baza.txt", ios::out | ios::app);
-		baza <<"\np " << p;
-
+		baza << "\np " << p;
 
 		break;
 	}
-	case(3): {
+	case('2'): {
 		cout << "Podaj PESEL: ";
-		string x;
-		
-		for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ) {
-			cin >> x;
-			if (x == iter->PESEL) {
+		cin >> PESEL;
+
+		int i = 0;
+		for (list<Pacjent>::iterator iter = pacjenci.begin(); iter != pacjenci.end(); ++iter) {
+
+			if (PESEL == iter->PESEL) {
+				i++;
 				cout << "Podaj has³o: ";
-				cin >> x;
-				if (x == iter->haslo) {
-					iter->Wyswietl_dane();
-					break;
+				cin >> h;
+				if (h != iter->haslo) {
+					cout << "B³êdne has³o";
 				}
 				else {
-					cout << "B³êdne has³o" << endl;
-					break;
+					wyborp2(x, PESEL, h);
+					
 				}
 			}
-			else {
-				cout << "Nie ma konta o danym numerze PESEL" << endl;
-				break;
-			}
 
-			}
-			
 		}
-	}
-	return;
-	wybor();
 
+		if (i == 0)
+			cout << "Nie posiadasz jeszcze konta" << endl;
+	}
+	}
 }
+
+	
+
 
 
 int main() {
@@ -85,7 +224,7 @@ int main() {
 	
 	baza.open("Baza.txt", ios::in);
 	string a, b, c, d, e, f, g, h;
-	while (baza) {
+	while (baza.good()) {
 		baza >> a;
 		if (a == "p") {
 			baza >> b >> c >> d >> e >> f >> g;
@@ -103,7 +242,6 @@ int main() {
 	}
 	baza.close();
 	
-	
 
 
 	
@@ -114,7 +252,7 @@ int main() {
 	switch (i) {
 	case(0): {
 		
-		wybor();
+		wyborp();
 		break;
 	}
 	case(1):
@@ -133,9 +271,12 @@ int main() {
 		
 
 	
-	wyswietl_pacjentow();
+	
 
 
 	system("PAUSE");
 	return 0;
 }
+
+
+

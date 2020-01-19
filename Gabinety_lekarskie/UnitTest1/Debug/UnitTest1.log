@@ -1,11 +1,8 @@
-﻿  unittest1.cpp
-\\krywan\redirecteduserfolders\kkusik8\pulpit\gabinety_lekarskie\unittest1\unittest1.cpp(28): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Ubezpieczenie.cpp
-\\krywan\redirecteduserfolders\kkusik8\pulpit\gabinety_lekarskie\gabinety_lekarskie\ubezpieczenie.cpp(13): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Platnosc.cpp
-\\krywan\redirecteduserfolders\kkusik8\pulpit\gabinety_lekarskie\gabinety_lekarskie\platnosc.cpp(52): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
+﻿  pch.cpp
   Paragon.cpp
-\\krywan\redirecteduserfolders\kkusik8\pulpit\gabinety_lekarskie\gabinety_lekarskie\paragon.cpp(18): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Osoba.cpp
-\\krywan\redirecteduserfolders\kkusik8\pulpit\gabinety_lekarskie\gabinety_lekarskie\osoba.cpp(13): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Generating Code...
+  Platnosc.cpp
+  Ubezpieczenie.cpp
+  UnitTest1.cpp
+  Generowanie kodu...
+     Trwa tworzenie biblioteki C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\Debug\UnitTest1.lib i obiektu C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\Debug\UnitTest1.exp
+  UnitTest1.vcxproj -> C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\Debug\UnitTest1.dll

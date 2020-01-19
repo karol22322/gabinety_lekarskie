@@ -21,6 +21,7 @@ public:
 	
 private:
 	int id;
+	float saldo;
 	
 };
 

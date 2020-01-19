@@ -1,7 +1,12 @@
 p karolkusik Karol Kusik Krakow 517438481 99060408792
-p sfsdffghdsa Papryka S這dka Ziemia 4324234 9840583453
-l sfsdfsdfsdfdsa Papryka Gorzka Ziemia 4324234 9840583453 urolog 
-l sfsdfdfdsa Dynia S這dka Ziemia 43242hgh34 9840586556453	kardiolog
-p sfsdfsdfsdfdsa Papryka S這dka Mars 4324234 9840583453
-p 1234567899 Karolina Kukierek Raczki 456978096 98073067089
+p sfsdffghdsa Papryka S這dka Ziemia 4324234 9840583493
+l sfsdfsdfsdfdsa Papryka Gorzka Ziemia 4324234 98583453 urolog 
+l sfsdfdfdsa Dynia S這dka Ziemia 43242hgh34 9840586556453 kardiolog
+p sfsdfsdfsdfdsa Papryka S這dka Jowisz 4324234 9840583453
+p 1234567899 Karolina Kukierek Neptun 456978096 98073067089
 p 1234567899 Walery Krzemowski Lublin 234506978 897898765432
+l MeDycyn@tomek Tomasz Walewski Krak闚 909546823 87122367934 pediatra
+p kamyczek.kropka Kamil Pszczo豉 Warszawa 570345284 01301535809
+p 565655565566555 dfgdfg dfgrgr Merkury 821645932 35455
+p 0125425154525 y45 545 565 44 44678888
+p 1234567899 htfh 5g ggrt 54645654 123453123

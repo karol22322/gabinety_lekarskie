@@ -7,6 +7,6 @@ public:
 	Pracownik();
 	~Pracownik();
 protected:
-	int id;
+	//int id;
 };
 
