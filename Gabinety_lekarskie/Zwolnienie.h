@@ -9,15 +9,16 @@ public:
 	Zwolnienie();
 	~Zwolnienie();
 	void Wydrukuj_zwolnienie();
+	void Zwolnienie::Stworz_zwolnienie(string imie, string nazw, int pesel, Lekarz lekarz, string opis);
 
 private:
-	//string imie;
-	//string nazwisko;
-	//unsigned int PESEL;
-	//string lekarz;
-	//int data_wystawienia; // do poprawy
-	//int termin_zwolnienia; // do poprawy
-	//string tresc;
+	string imie;
+	string nazwisko;
+	unsigned int PESEL;
+	string lekarz;
+	int data_wystawienia;
+	int termin_zwolnienia; 
+	string tresc;
 
 
 

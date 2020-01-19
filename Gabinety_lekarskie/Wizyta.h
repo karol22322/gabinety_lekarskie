@@ -1,19 +1,19 @@
 #pragma once
-#include <time.h>
 #include "Pacjent.h"
+#include <list>
 class Wizyta
 {
 public:
 	Wizyta();
 	~Wizyta();
 
-	void Dodaj_wizyte();
-	void Wczytaj_recepte();
-	void Wczytaj_zwolnienie();
-	void Oblicz_koszt(Pacjent);
+	void wyswietl_recepty();
+	void wyswietl_zwolnienia();
+	void dodaj_zwolnienie(Zwolnienie zw);
+	void dodaj_recepte(Recepta re);
 private:
-	int czas_rozp; // Do poprawy
-	Pacjent pacjent;
+	list<Zwolnienie> zwolnienia;
+	list<Recepta> recepty;
 
 };
 
