@@ -127,30 +127,23 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Osoba.cpp" />
     <ClCompile Include="Pacjent.cpp" />
-    <ClCompile Include="Paragon.cpp" />
-    <ClCompile Include="Platnosc.cpp" />
-    <ClCompile Include="Pracownik.cpp" />
     <ClCompile Include="Recepta.cpp" />
     <ClCompile Include="Termin.cpp" />
-    <ClCompile Include="Ubezpieczenie.cpp" />
-    <ClCompile Include="Wizyta.cpp" />
     <ClCompile Include="Zwolnienie.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Lekarz.h" />
     <ClInclude Include="Osoba.h" />
     <ClInclude Include="Pacjent.h" />
-    <ClInclude Include="Paragon.h" />
-    <ClInclude Include="Platnosc.h" />
-    <ClInclude Include="Pracownik.h" />
     <ClInclude Include="Recepta.h" />
     <ClInclude Include="Termin.h" />
-    <ClInclude Include="Ubezpieczenie.h" />
-    <ClInclude Include="Wizyta.h" />
     <ClInclude Include="Zwolnienie.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="baza.txt" />
+    <Text Include="recepty.txt" />
+    <Text Include="wizyty.txt" />
+    <Text Include="zwolnienia.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

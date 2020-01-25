@@ -1,13 +1,10 @@
 #include "Pacjent.h"
 
 
-Pacjent::Pacjent():saldo(0.0)
-{
-	id = licznik;
-	//Osoba();
 
-}
-Pacjent::Pacjent(string h, string im, string naz, string ad, string nr, string pesel): Osoba(h, im, naz, ad, nr, pesel), saldo(0.0), id(licznik) {
+Pacjent::Pacjent(): saldo(0.0), ubezp(true) {}
+
+Pacjent::Pacjent(string h, string im, string naz, string ad, string nr, string pesel, float saldo): Osoba(h, im, naz, ad, nr, pesel), saldo(saldo) {
 }
 
 Pacjent::~Pacjent()
@@ -16,26 +13,39 @@ Pacjent::~Pacjent()
 }
 
 
-
+bool Pacjent::Czy_Pesel(string p) {
+	if (p == PESEL)
+		return true;
+	else
+		return false;
+}
 
 float Pacjent::Wyswietl_saldo() {
 	return saldo;
 }
 
 
-void Pacjent::Rezerwuj_termin() {
+bool Pacjent::Rezerwuj_termin(Lekarz &l, int nr) {
+	int i = (nr - 1) % 12;
+	int j = (nr - 1) / 12;
+	
+	if (l.termin[i][j].Czy_wolny() == true) {
+		l.termin[i][j].Rezerwuj();
+		l.termin[i][j].Pesel(this->PESEL);
+		//cout << l.termin[i][j] << endl;
+		
+
+		return 1;
+	}
+	else
+		cout << "Ten termin jest ju¿ przez kogoœ zajêty" << endl;
+	return 0;
 
 
 }
-//void Pacjent::Wydrukuj_recepte(Recepta recepta) {
 
-
-//}
-void Pacjent::Wydrukuj_zwolnienie() {
-
-
+void Pacjent::Zwieksz_saldo(float k) {
+	saldo += k;
 }
 
-int Pacjent::Print_id() {
-	return id;
-}
+

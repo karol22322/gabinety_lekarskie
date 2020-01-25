@@ -160,9 +160,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\Paragon.cpp" />
-    <ClCompile Include="..\Platnosc.cpp" />
-    <ClCompile Include="..\Ubezpieczenie.cpp" />
+    <ClCompile Include="..\Termin.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -172,9 +170,7 @@
     <ClCompile Include="UnitTest1.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Paragon.h" />
-    <ClInclude Include="..\Platnosc.h" />
-    <ClInclude Include="..\Ubezpieczenie.h" />
+    <ClInclude Include="..\Termin.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>

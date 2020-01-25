@@ -1,17 +1,19 @@
 #pragma once
-#include <string>
-#include "Lekarz.h"
-#include "Pacjent.h"
+#include <iostream>
+using namespace std;
+
 using namespace std;
 class Recepta
 {
 public:
-	Recepta();
+	Recepta(string* l, int ile, string PESEL);
 	~Recepta();
+
+	bool Czy_Pesel(string);
 	
 private:
 	
-	string nazwa_leku;
-	int data_wydania = 0; // do poprawy
+	string PESEL;
+	string lekarstwo[10];
 };
 

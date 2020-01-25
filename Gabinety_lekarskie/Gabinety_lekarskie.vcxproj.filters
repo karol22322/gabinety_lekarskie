@@ -27,25 +27,10 @@
     <ClCompile Include="Pacjent.cpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClCompile>
-    <ClCompile Include="Paragon.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Platnosc.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Pracownik.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
     <ClCompile Include="Recepta.cpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClCompile>
     <ClCompile Include="Termin.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Ubezpieczenie.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Wizyta.cpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClCompile>
     <ClCompile Include="Zwolnienie.cpp">
@@ -62,25 +47,10 @@
     <ClInclude Include="Pacjent.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Paragon.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Platnosc.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Pracownik.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Recepta.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Termin.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Ubezpieczenie.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Wizyta.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Zwolnienie.h">
@@ -89,6 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="baza.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="wizyty.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="recepty.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="zwolnienia.txt">
       <Filter>Pliki zasobów</Filter>
     </Text>
   </ItemGroup>

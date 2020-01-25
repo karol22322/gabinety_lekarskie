@@ -1,10 +1,10 @@
 #pragma once
-#include "Pracownik.h"
+
 #include "Recepta.h"
 #include "Zwolnienie.h"
-#include "Pacjent.h"
-#include <string>
-
+#include "Termin.h"
+#include "Osoba.h"
+#include <fstream>
 using namespace std;
 class Lekarz :
 	public Osoba
@@ -18,13 +18,16 @@ public:
 	void Wystaw_recepte();
 	void Wystaw_zwolnienie();
 	void Wprowadz_specjalizacje();
+	
 	string specjal();
+
+
+	Termin termin[12][5];
 	
 	friend void wyborp();
 	friend ostream& operator<<(ostream& os, const Lekarz& oso);
 
 private:
-	int id;
 	string specjalizacja;
 };
 

@@ -1,8 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-#include "../Paragon.h"
-#include "../Ubezpieczenie.h"
-#include "../Platnosc.h"
+#include "../Termin.h"
+
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -14,9 +13,9 @@ namespace UnitTest1
 
 		TEST_METHOD(TestMethod1)
 		{
-			Platnosc p;
-			float f = 0;
-			Assert::AreEqual(p.ile(), f);
+			Termin t;
+			bool ter = true;
+			Assert::AreEqual(t.Czy_wolny(), ter);
 
 		}
 

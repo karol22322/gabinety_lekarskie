@@ -21,13 +21,7 @@
     <ClCompile Include="pch.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="..\Ubezpieczenie.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Paragon.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Platnosc.cpp">
+    <ClCompile Include="..\Termin.cpp">
       <Filter>Pliki nagłówkowe</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +29,7 @@
     <ClInclude Include="pch.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="..\Ubezpieczenie.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Paragon.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Platnosc.h">
+    <ClInclude Include="..\Termin.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>

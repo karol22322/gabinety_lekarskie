@@ -1,6 +1,6 @@
-#include <string>
+
 #include "Osoba.h"
-#include <iostream>
+
 
 
 using namespace std;
@@ -8,17 +8,15 @@ using namespace std;
 
 Osoba::Osoba() {
 	
-	licznik++;
 
 }
 
 Osoba::Osoba(string h, string im, string naz, string ad, string nr, string pesel):haslo(h), imie(im), nazwisko(naz), adres(ad), nrTel(nr), PESEL(pesel) {
-	licznik++;
 }
 
 Osoba::~Osoba() {
 }
-int Osoba::licznik = 0;
+
 
 
 
@@ -45,6 +43,13 @@ void Osoba::Dodaj_osobe() {
 	cin >> adres;
 	cout << "PESEL: ";
 	cin >> PESEL;
+}
+
+bool Osoba::Czy_Pesel(string p) {
+	if (p == PESEL)
+		return true;
+	else
+		return false;
 }
 
 void Osoba::Edytuj_dane() {
@@ -131,7 +136,7 @@ void Osoba::Zmien_haslo() {
 }
 
 void Osoba::Wyswietl_dane() {
-	cout << "Dane pacjenta: " << endl << endl;
+	cout << "Dane pacjenta: " << endl;
 	cout << "Imie: " << imie << endl;
 	cout << "Nazwisko: " << nazwisko << endl;
 	cout << "PESEL: " << PESEL << endl;

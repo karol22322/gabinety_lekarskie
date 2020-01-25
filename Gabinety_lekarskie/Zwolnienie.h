@@ -1,22 +1,21 @@
 #pragma once
-#include "Pacjent.h"
+#include <iostream>
+
 
 using namespace std;
 
 class Zwolnienie{
 public:
-	Zwolnienie();
+	Zwolnienie(string, string, string);
 	~Zwolnienie();
-	void Wydrukuj_zwolnienie();
+
+	bool Czy_Pesel(string p);
+	
 
 private:
-	//string imie;
-	//string nazwisko;
-	//unsigned int PESEL;
-	//string lekarz;
-	//int data_wystawienia; // do poprawy
-	//int termin_zwolnienia; // do poprawy
-	//string tresc;
+	string odkiedy;
+	string dokiedy;
+	string PESEL;
 
 
 
