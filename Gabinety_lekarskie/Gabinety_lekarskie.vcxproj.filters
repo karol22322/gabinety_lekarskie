@@ -16,25 +16,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lekarz.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Osoba.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Pacjent.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Recepta.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Termin.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Zwolnienie.cpp">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
