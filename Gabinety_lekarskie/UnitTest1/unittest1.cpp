@@ -1,5 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#include "../Recepta.h"
+#include "../Recepta.cpp"
 #include "../Termin.h"
 
 
@@ -43,6 +45,16 @@ namespace UnitTest1
 			Assert::AreEqual(t.Czy_Pesel(pesel), true);
 
 		}
+
+		TEST_METHOD(TestMethod5)
+		{
+			string* a = new string;
+			Recepta r(a, 3, "1234");
+			delete a;
+			Assert::AreNotEqual(r.Czy_Pesel("123"), true);
+
+		}
+
 
 	};
 }

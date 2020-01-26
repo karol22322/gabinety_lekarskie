@@ -170,6 +170,7 @@
     <ClCompile Include="UnitTest1.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Recepta.h" />
     <ClInclude Include="..\Termin.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
