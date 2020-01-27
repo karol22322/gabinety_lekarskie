@@ -48,10 +48,10 @@ namespace UnitTest1
 
 		TEST_METHOD(TestMethod5)
 		{
-			string* a = new string;
-			Recepta r(a, 3, "1234");
-			delete a;
-			Assert::AreNotEqual(r.Czy_Pesel("123"), true);
+			string a[10];
+			string p = "1234"
+			Recepta r(a, 3, p);
+			Assert::AreEqual(r.Czy_Pesel(p), true);
 
 		}
 
