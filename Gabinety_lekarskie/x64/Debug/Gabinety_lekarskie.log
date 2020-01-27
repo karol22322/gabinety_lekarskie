@@ -1,0 +1,24 @@
+<<<<<<< Updated upstream
+﻿  main.cpp
+  Osoba.cpp
+  Paragon.cpp
+  Platnosc.cpp
+  Ubezpieczenie.cpp
+  Generowanie kodu...
+  Gabinety_lekarskie.vcxproj -> C:\Users\pc\OneDrive\Pulpit\gabinety_lekarskie\gabinety_lekarskie-master\Gabinety_lekarskie\x64\Debug\Gabinety_lekarskie.dll
+=======
+﻿  Lekarz.cpp
+  main.cpp
+  Osoba.cpp
+  Pacjent.cpp
+  Paragon.cpp
+  Platnosc.cpp
+  Pracownik.cpp
+  Recepta.cpp
+  Termin.cpp
+  Ubezpieczenie.cpp
+  Wizyta.cpp
+  Zwolnienie.cpp
+  Generowanie kodu...
+  Gabinety_lekarskie.vcxproj -> C:\Users\pc\OneDrive\Pulpit\Gabinety_lekarskie\x64\Debug\Gabinety_lekarskie.exe
+>>>>>>> Stashed changes
